@@ -23,58 +23,58 @@ Color=46,52,54
 Color=111,111,111
 
 [Color1]
-Color=250,38,116
+Color=215,16,86
 
 [Color1Faint]
 Color=118,0,0
 
 [Color1Intense]
-Color=255,104,90
+Color=255,94,80
 
 [Color2]
-Color=50,180,85
+Color=23,150,55
 
 [Color2Faint]
 Color=78,154,6
 
 [Color2Intense]
-Color=138,226,52
+Color=154,215,67
 
 [Color3]
-Color=215,95,0
+Color=215,125,0
 
 [Color3Faint]
 Color=196,160,0
 
 [Color3Intense]
-Color=252,233,79
+Color=225,200,70
 
 [Color4]
-Color=22,89,165
+Color=24,74,175
 
 [Color4Faint]
 Color=52,101,164
 
 [Color4Intense]
-Color=114,159,207
+Color=63,148,205
 
 [Color5]
-Color=177,0,177
+Color=175,27,163
 
 [Color5Faint]
 Color=117,80,123
 
 [Color5Intense]
-Color=182,148,232
+Color=161,115,225
 
 [Color6]
-Color=0,200,200
+Color=0,174,190
 
 [Color6Faint]
 Color=6,152,154
 
 [Color6Intense]
-Color=145,255,246
+Color=134,235,227
 
 [Color7]
 Color=211,215,207
@@ -101,7 +101,7 @@ RandomHueRange=360
 RandomSaturationRange=100
 
 [General]
-Blur=true
+Blur=false
 ColorRandomization=false
 Description=HiQolor
 Opacity=1
