@@ -1,0 +1,2 @@
+# HiQolor Color Scheme
+
