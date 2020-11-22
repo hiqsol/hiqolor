@@ -1,0 +1,33 @@
+{
+    "name": "hiqsol/hiqolor",
+    "type": "project",
+    "description": "HiQolor scheme tool",
+    "keywords": [
+        "hiqolor",
+        "color scheme"
+    ],
+    "homepage": "https://github.com/hiqsol/hiqolor",
+    "license": "MIT",
+    "support": {
+        "email": "sol@hiqdev.com",
+        "source": "https://github.com/hiqsol/hiqolor",
+        "issues": "https://github.com/hiqsol/hiqolor/issues",
+        "wiki": "https://github.com/hiqsol/hiqolor/wiki"
+    },
+    "authors": [
+        {
+            "name": "Andrii Vasyliev",
+            "email": "sol@hiqdev.com",
+            "homepage": "http://hiqdev.com/"
+        }
+    ],
+    "require": {
+        "aristath/ari-color": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "hiqolor\\": "php"
+        }
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+use hiqolor\Converter;
+
+(function ($args){
+    require_once __DIR__ . '/../vendor/autoload.php';
+
+    array_shift($args);
+    $src = array_shift($args);
+    $dst = array_shift($args);
+
+    (new Converter())->convert($src, $dst);
+})($argv);
