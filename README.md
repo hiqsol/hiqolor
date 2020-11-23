@@ -1,5 +1,14 @@
 # HiQolor Color Scheme
 
+## Ideas
+
+To achieve better readability in shell:
+
+- maximize hue difference in color pairs (bold/normal)
+  and among all colors
+- make saturation and brightness of bold color higher
+  then normal
+
 ## Color table
 
                 Hue     Sat     Val
