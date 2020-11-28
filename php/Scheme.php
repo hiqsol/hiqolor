@@ -73,7 +73,7 @@ class Scheme
 
     public function normalizeColor($color): Color
     {
-        return $color instanceof Color ? $color : Color::fromString((string)$color);
+        return $color instanceof Color ? $color : Color::fromMixed($color);
     }
 
     public function normalizeKey($key): string

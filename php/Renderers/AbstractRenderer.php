@@ -20,6 +20,10 @@ abstract class AbstractRenderer implements RendererInterface
     {
         $res = [];
         foreach ($scheme->getAll() as $key => $color) {
+            if ($color === null) {
+                var_dump(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, $key);
+                continue;
+            }
             $res["{{ $key.hex }}"] = $color->getHex();
         }
         return $res;
