@@ -34,4 +34,19 @@ class Color
     {
         return $this->color->hex;
     }
+
+    public function getHue  (): string { return (string)$this->color->hue; }
+    public function getHue3r(): string { return $this->align3r($this->getHue()); }
+    public function getHue3l(): string { return $this->align3l($this->getHue()); }
+
+    public function getSat(): string { return (string)$this->color->saturation; }
+    public function getSat3r(): string { return $this->align3r($this->getSat()); }
+    public function getSat3l(): string { return $this->align3l($this->getSat()); }
+
+    public function getVal(): string { return (string)$this->color->lightness; }
+    public function getVal3r(): string { return $this->align3r($this->getVal()); }
+    public function getVal3l(): string { return $this->align3l($this->getVal()); }
+
+    public function align3l(string $v): string { return sprintf('%-3s', $v); }
+    public function align3r(string $v): string { return sprintf('%3s', $v); }
 }

@@ -21,10 +21,18 @@ abstract class AbstractRenderer implements RendererInterface
         $res = [];
         foreach ($scheme->getAll() as $key => $color) {
             if ($color === null) {
-                var_dump(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, $key);
-                continue;
+                var_dump(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, $key);die;
             }
-            $res["{{ $key.hex }}"] = $color->getHex();
+            $res["{{ $key.hex }}"]      = $color->getHex();
+            $res["{{ $key.hue }}"]      = $color->getHue();
+            $res["{{ $key.hue3r }}"]    = $color->getHue3r();
+            $res["{{ $key.hue3l }}"]    = $color->getHue3l();
+            $res["{{ $key.sat }}"]      = $color->getSat();
+            $res["{{ $key.sat3r }}"]    = $color->getSat3r();
+            $res["{{ $key.sat3l }}"]    = $color->getSat3l();
+            $res["{{ $key.val }}"]      = $color->getVal();
+            $res["{{ $key.val3r }}"]    = $color->getVal3r();
+            $res["{{ $key.val3l }}"]    = $color->getVal3l();
         }
         return $res;
     }
