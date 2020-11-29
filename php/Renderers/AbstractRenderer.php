@@ -24,6 +24,9 @@ abstract class AbstractRenderer implements RendererInterface
                 var_dump(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, $key);die;
             }
             $res["{{ $key.hex }}"]      = $color->getHex();
+            $res["{{ $key.red }}"]      = $color->getred();
+            $res["{{ $key.green }}"]    = $color->getGreen();
+            $res["{{ $key.blue }}"]     = $color->getBlue();
             $res["{{ $key.hue }}"]      = $color->getHue();
             $res["{{ $key.hue3r }}"]    = $color->getHue3r();
             $res["{{ $key.hue3l }}"]    = $color->getHue3l();

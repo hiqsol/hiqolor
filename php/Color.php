@@ -30,10 +30,10 @@ class Color
         return new self(ariColor::newColor($arr));
     }
 
-    public function getHex(): string
-    {
-        return $this->color->hex;
-    }
+    public function getHex(): string { return $this->color->hex; }
+    public function getRed(): string { return (string)$this->color->red; }
+    public function getGreen(): string { return (string)$this->color->green; }
+    public function getBlue(): string { return (string)$this->color->blue; }
 
     public function getHue  (): string { return (string)$this->color->hue; }
     public function getHue3r(): string { return $this->align3r($this->getHue()); }
