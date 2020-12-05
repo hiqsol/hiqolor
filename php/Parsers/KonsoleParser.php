@@ -26,6 +26,11 @@ class KonsoleParser implements ParserInterface
                 }
                 $scheme->set($this->prepareKey($name), $color);
             }
+            if (preg_match('/^Description=(.+)$/', $line, $ms)) {
+                if ($name === 'General') {
+                    $scheme->name = $ms[1];
+                }
+            }
         }
 
         return $scheme;

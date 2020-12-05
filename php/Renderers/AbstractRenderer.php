@@ -18,7 +18,9 @@ abstract class AbstractRenderer implements RendererInterface
 
     private function prepareVars(Scheme $scheme): array
     {
-        $res = [];
+        $res = [
+            "{{ name }}" => $scheme->name,
+        ];
         foreach ($scheme->getAll() as $key => $color) {
             if ($color === null) {
                 var_dump(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, $key);die;

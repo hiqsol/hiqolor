@@ -1,3 +1,4 @@
+Name: {{ name }}
               Hue         Sat         Val
 Ground     {{ foreground.hue3r }} / {{ background.hue3l }}   {{ foreground.sat3r }} / {{ background.sat3l }}   {{ foreground.val3r }} / {{ background.val }}
 Black      {{ color0.hue3r }} / {{ color8.hue3l }}   {{ color0.sat3r }} / {{ color8.sat3l }}   {{ color0.val3r }} / {{ color8.val }}

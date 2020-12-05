@@ -5,6 +5,8 @@ namespace hiqolor;
 
 class Scheme
 {
+    public string $name;
+
     private array $colors = [
         'foreground'    => null,
         'background'    => null,

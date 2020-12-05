@@ -17,4 +17,10 @@ class Detector
         $ext = $parts['extension'] ?? null ?: $parts['basename'];
         return $this->types[$ext] ?? 'Xresource';
     }
+
+    public function extractName(string $path = null): string
+    {
+        $parts = pathinfo($path ?? '');
+        return $parts['basename'] ?? null;
+    }
 }

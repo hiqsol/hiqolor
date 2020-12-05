@@ -20,6 +20,9 @@ class ColorTableParser implements ParserInterface
                 $scheme->set($first, "hsl($ms[2], $ms[4]%, $ms[6]%)");
                 $scheme->set($second, "hsl($ms[3], $ms[5]%, $ms[7]%)");
             }
+            if (preg_match("/^Name: (.+)$/", $line, $ms)) {
+                $scheme->name = $ms[1];
+            }
         }
 
         return $scheme;

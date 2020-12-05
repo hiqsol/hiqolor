@@ -103,6 +103,4 @@ RandomSaturationRange=100
 [General]
 Blur=false
 ColorRandomization=false
-Description=HiQolor
-Opacity=1
-Wallpaper=
+Description={{ name }}
