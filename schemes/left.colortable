@@ -1,11 +1,11 @@
-Name: HiQolor Normal
+Name: HiQolor Left
               Hue         Sat         Val
 Ground       0 / 0       5 / 0      70 / 0
 Black        0 / 0       0 / 0      20 / 40
-Red        330 / 0      86 / 100    45 / 66
-Green      120 / 90     73 / 65     34 / 55
 Yellow      30 / 60    100 / 72     42 / 58
+Green      120 / 90     73 / 65     34 / 55
+Cyan       180 / 150   100 / 72     37 / 72
 Blue       240 / 210    76 / 59     39 / 53
 Purple     300 / 270    73 / 65     40 / 67
-Cyan       180 / 150   100 / 72     37 / 72
+Red        330 / 0      86 / 100    45 / 66
 White       90 / 60      9 / 6      80 / 90
