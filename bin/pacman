@@ -54,18 +54,18 @@ g4() { echo -n " $1████████████ "; }
 g5() { echo -n " $1██▀██▀▀██▀██ "; }
 g6() { echo -n " $1▀   ▀  ▀   ▀ "; }
 
-echo "    BLACK          RED          GREEN         YELLOW         BLUE         PURPLE         CYAN "
-g1 $color0;g1 $color1;g1 $color2;p1 $color3;g1 $color4;g1 $color5;g1 $color6;echo
-g2 $color0;g2 $color1;g2 $color2;p2 $color3;g2 $color4;g2 $color5;g2 $color6;echo
-g3 $color0;g3 $color1;g3 $color2;p3 $color3;g3 $color4;g3 $color5;g3 $color6;echo
-g4 $color0;g4 $color1;g4 $color2;p4 $color3;g4 $color4;g4 $color5;g4 $color6;echo
-g5 $color0;g5 $color1;g5 $color2;p5 $color3;g5 $color4;g5 $color5;g5 $color6;echo
-g6 $color0;g6 $color1;g6 $color2;p6 $color3;g6 $color4;g6 $color5;g6 $color6;echo
-echo -n $color0 $boldon;
-echo "    color0        color1        color2        color3       color4        color5        color6"
-g1 $color0;g1 $color1;g1 $color2;p1 $color3;g1 $color4;g1 $color5;g1 $color6;echo
-g2 $color0;g2 $color1;g2 $color2;p2 $color3;g2 $color4;g2 $color5;g2 $color6;echo
-g3 $color0;g3 $color1;g3 $color2;p3 $color3;g3 $color4;g3 $color5;g3 $color6;echo
-g4 $color0;g4 $color1;g4 $color2;p4 $color3;g4 $color4;g4 $color5;g4 $color6;echo
-g5 $color0;g5 $color1;g5 $color2;p5 $color3;g5 $color4;g5 $color5;g5 $color6;echo
-g6 $color0;g6 $color1;g6 $color2;p6 $color3;g6 $color4;g6 $color5;g6 $color6;echo
+echo "    YELLOW        GREEN          CYAN          BLUE         PURPLE         RED           BLACK"
+p1 $color3;g1 $color2;g1 $color6;g1 $color4;g1 $color5;g1 $color1;g1 $color0;echo
+p2 $color3;g2 $color2;g2 $color6;g2 $color4;g2 $color5;g2 $color1;g2 $color0;echo
+p3 $color3;g3 $color2;g3 $color6;g3 $color4;g3 $color5;g3 $color1;g3 $color0;echo
+p4 $color3;g4 $color2;g4 $color6;g4 $color4;g4 $color5;g4 $color1;g4 $color0;echo
+p5 $color3;g5 $color2;g5 $color6;g5 $color4;g5 $color5;g5 $color1;g5 $color0;echo
+p6 $color3;g6 $color2;g6 $color6;g6 $color4;g6 $color5;g6 $color1;g6 $color0;echo
+echo -n $color0$boldon;
+echo "    color3        color2        color6        color4        color5        color1        color0"
+p1 $color3;g1 $color2;g1 $color6;g1 $color4;g1 $color5;g1 $color1;g1 $color0;echo
+p2 $color3;g2 $color2;g2 $color6;g2 $color4;g2 $color5;g2 $color1;g2 $color0;echo
+p3 $color3;g3 $color2;g3 $color6;g3 $color4;g3 $color5;g3 $color1;g3 $color0;echo
+p4 $color3;g4 $color2;g4 $color6;g4 $color4;g4 $color5;g4 $color1;g4 $color0;echo
+p5 $color3;g5 $color2;g5 $color6;g5 $color4;g5 $color5;g5 $color1;g5 $color0;echo
+p6 $color3;g6 $color2;g6 $color6;g6 $color4;g6 $color5;g6 $color1;g6 $color0;echo
