@@ -1,5 +1,5 @@
 Name: {{ name }}
-              Hue         Sat         Val
+              Hue     Saturation     Value
 Ground     {{ foreground.hue3r }} / {{ background.hue3l }}   {{ foreground.sat3r }} / {{ background.sat3l }}   {{ foreground.val3r }} / {{ background.val }}
 Black      {{ color0.hue3r }} / {{ color8.hue3l }}   {{ color0.sat3r }} / {{ color8.sat3l }}   {{ color0.val3r }} / {{ color8.val }}
 Red        {{ color1.hue3r }} / {{ color9.hue3l }}   {{ color1.sat3r }} / {{ color9.sat3l }}   {{ color1.val3r }} / {{ color9.val }}
