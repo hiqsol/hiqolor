@@ -1,14 +1,11 @@
 #!/bin/sh
-# https://gist.github.com/cirrusUK/9494694
-
-# ANSI Color -- use these variables to easily have different color
-#    and format output. Make sure to output the reset sequence after
-#    colors (f = foreground, b = background), and use the 'off'
-#    feature for anything you turn on.
+# Thanks to https://gist.github.com/cirrusUK/9494694
 
 initializeANSI()
 {
- esc=""
+  esc=""
+  reset="${esc}[0m"
+  boldon="${esc}[1m"; boldoff="${esc}[22m"
 
   color0="${esc}[30m"; # Foreground BLACK
   color1="${esc}[31m"; # Foreground RED
@@ -18,22 +15,6 @@ initializeANSI()
   color5="${esc}[35m"; # Foreground PURPLE
   color6="${esc}[36m"; # Foreground CYAN
   color7="${esc}[37m"; # Foreground WHITE
-
-  blackb="${esc}[40m";
-  redb="${esc}[41m";
-  greenb="${esc}[42m";
-  yellowb="${esc}[43m";
-  blueb="${esc}[44m";
-  purpleb="${esc}[45m";
-  cyanb="${esc}[46m";
-  whiteb="${esc}[47m"
-
-  boldon="${esc}[1m";    boldoff="${esc}[22m"
-  italicson="${esc}[3m"; italicsoff="${esc}[23m"
-  ulon="${esc}[4m";      uloff="${esc}[24m"
-  invon="${esc}[7m";     invoff="${esc}[27m"
-
-  reset="${esc}[0m"
 }
 
 initializeANSI
