@@ -21,6 +21,6 @@ class Detector
     public function extractName(string $path = null): string
     {
         $parts = pathinfo($path ?? '');
-        return $parts['basename'] ?? null;
+        return $parts['filename'] ?? null;
     }
 }

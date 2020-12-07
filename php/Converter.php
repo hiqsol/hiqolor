@@ -20,6 +20,9 @@ class Converter
         $renderer = (new RendererFactory())->get($outputFormat);
 
         $scheme = $parser->parse($text);
+        if (empty($scheme->name)) {
+            $scheme->name = $detector->extractName($src);
+        }
         $output = $renderer->render($scheme);
 
         $this->write($dst, $output);
