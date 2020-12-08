@@ -1,2 +1,7 @@
 /composer.lock
+/package-lock.json
+/node_modules
 /vendor
+
+/schemes/*.css
+/schemes/*.colorscheme

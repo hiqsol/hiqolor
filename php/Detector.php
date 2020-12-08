@@ -8,6 +8,7 @@ class Detector
     private array $types = [
         'colorscheme'   => 'Konsole',
         'colortable'    => 'ColorTable',
+        'css'           => 'Css',
         'xresource'     => 'Xresource',
     ];
 
