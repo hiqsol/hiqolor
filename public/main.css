@@ -1,29 +1,31 @@
 :root {
     font-family:Hack;
     font-size:12px;
-
-    --color0:  #000; /*      black  */
-    --color1:  #f00; /*      red    */
-    --color2:  #0f0; /*      green  */
-    --color3:  #ff0; /*      yellow */
-    --color4:  #00f; /*      blue   */
-    --color5:  #f0f; /*      purple */
-    --color6:  #0ff; /*      cyan   */
-    --color7:  #fff; /*      white  */
-    --color8:  #000; /* bold black  */
-    --color9:  #f00; /* bold red    */
-    --color10: #0f0; /* bold green  */
-    --color11: #ff0; /* bold yellow */
-    --color12: #00f; /* bold blue   */
-    --color13: #f0f; /* bold purple */
-    --color14: #0ff; /* bold cyan   */
-    --color15: #fff; /* bold white  */
+    font-color: var(--colorFg);
+    background-color: var(--colorBg);
 }
 
-pre {
-    color:white;
-}
+.colorFg        { color: var(--colorFg); }
+.colorBg        { color: var(--colorBg); }
+.color0         { color: var(--color0); }
+.color1         { color: var(--color1); }
+.color2         { color: var(--color2); }
+.color3         { color: var(--color3); }
+.color4         { color: var(--color4); }
+.color5         { color: var(--color5); }
+.color6         { color: var(--color6); }
+.color7         { color: var(--color7); }
+.color8         { color: var(--color8); }
+.color9         { color: var(--color9); }
+.color10        { color: var(--color10); }
+.color11        { color: var(--color11); }
+.color12        { color: var(--color12); }
+.color13        { color: var(--color13); }
+.color14        { color: var(--color14); }
+.color15        { color: var(--color15); }
 
+.background     { color: var(--colorBg); }
+.foreground     { color: var(--colorFg); }
 .black          { color: var(--color0); }
 .red            { color: var(--color1); }
 .green          { color: var(--color2); }
