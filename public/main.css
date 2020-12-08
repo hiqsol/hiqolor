@@ -1,0 +1,43 @@
+:root {
+    font-family:Hack;
+    font-size:12px;
+
+    --color0:  #000; /*      black  */
+    --color1:  #f00; /*      red    */
+    --color2:  #0f0; /*      green  */
+    --color3:  #ff0; /*      yellow */
+    --color4:  #00f; /*      blue   */
+    --color5:  #f0f; /*      purple */
+    --color6:  #0ff; /*      cyan   */
+    --color7:  #fff; /*      white  */
+    --color8:  #000; /* bold black  */
+    --color9:  #f00; /* bold red    */
+    --color10: #0f0; /* bold green  */
+    --color11: #ff0; /* bold yellow */
+    --color12: #00f; /* bold blue   */
+    --color13: #f0f; /* bold purple */
+    --color14: #0ff; /* bold cyan   */
+    --color15: #fff; /* bold white  */
+}
+
+pre {
+    color:white;
+}
+
+.black          { color: var(--color0); }
+.red            { color: var(--color1); }
+.green          { color: var(--color2); }
+.yellow         { color: var(--color3); }
+.blue           { color: var(--color4); }
+.purple         { color: var(--color5); }
+.cyan           { color: var(--color6); }
+.white          { color: var(--color7); }
+.bold.black     { color: var(--color8); }
+.bold.red       { color: var(--color9); }
+.bold.green     { color: var(--color10); }
+.bold.yellow    { color: var(--color11); }
+.bold.blue      { color: var(--color12); }
+.bold.purple    { color: var(--color13); }
+.bold.cyan      { color: var(--color14); }
+.bold.white     { color: var(--color15); }
+

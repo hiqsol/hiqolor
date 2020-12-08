@@ -1,0 +1,53 @@
+<!doctype html>
+<html style="background-color:black">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <span class=black>black</span>
+    <span class=red>red</span>
+    <span class=green>green</span>
+    <span class=yellow>yellow</span>
+    <span class=blue>blue</span>
+    <span class=purple>purple</span>
+    <span class=cyan>cyan</span>
+    <span class=white>white</span>
+    <pre>
+&lt;?php
+declare(strict_types=1);
+
+<span class=cyan>namespace</span> hiqolor;
+
+class Scheme
+{
+    public string $name;
+
+    private array $colors = [
+        'foreground'    =&gt; null,
+    ];
+
+    public function has($key): bool
+    {
+        return !empty($this->colors[$key]);
+    }
+
+    public function setAll(array $colors): self
+    {
+        foreach ($colors as $no => $color) {
+            $this->set($no, $color);
+        }
+
+        return $this;
+    }
+
+    public function set($key, $color): self
+    {
+        $key = $this->normalizeKey($key);
+        $color = $this->normalizeColor($color);
+        $this->colors[$key] = $color;
+        return $this->setAliases($key, $color);
+    }
+}
+    </pre>
+  </body>
+</html>
