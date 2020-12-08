@@ -1,8 +1,12 @@
 :root {
     font-family:Hack;
-    font-size:12px;
-    font-color: var(--colorFg);
+    font-size:14px;
+    color: var(--colorFg);
     background-color: var(--colorBg);
+}
+
+B {
+    font-weight: normal;
 }
 
 .colorFg        { color: var(--colorFg); }
@@ -34,12 +38,20 @@
 .purple         { color: var(--color5); }
 .cyan           { color: var(--color6); }
 .white          { color: var(--color7); }
-.bold.black     { color: var(--color8); }
-.bold.red       { color: var(--color9); }
-.bold.green     { color: var(--color10); }
-.bold.yellow    { color: var(--color11); }
-.bold.blue      { color: var(--color12); }
-.bold.purple    { color: var(--color13); }
-.bold.cyan      { color: var(--color14); }
-.bold.white     { color: var(--color15); }
+.bold .black    { color: var(--color8); }
+.bold .red      { color: var(--color9); }
+.bold .green    { color: var(--color10); }
+.bold .yellow   { color: var(--color11); }
+.bold .blue     { color: var(--color12); }
+.bold .purple   { color: var(--color13); }
+.bold .cyan     { color: var(--color14); }
+.bold .white    { color: var(--color15); }
 
+.black  B       { color: var(--color8); }
+.red    B       { color: var(--color9); }
+.green  B       { color: var(--color10); }
+.yellow B       { color: var(--color11); }
+.blue   B       { color: var(--color12); }
+.purple B       { color: var(--color13); }
+.cyan   B       { color: var(--color14); }
+.white  B       { color: var(--color15); }

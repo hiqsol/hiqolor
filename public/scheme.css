@@ -1,14 +1,16 @@
+/* Name: name */
+
 :root {
     --colorBg: #000; /*      background */
-    --colorFg: #fff; /*      foreground */
+    --colorFg: #ccc; /*      coreground */
     --color0:  #000; /*      black      */
-    --color1:  #f00; /*      red        */
-    --color2:  #0f0; /*      green      */
-    --color3:  #ff0; /*      yellow     */
-    --color4:  #00f; /*      blue       */
-    --color5:  #f0f; /*      purple     */
-    --color6:  #0ff; /*      cyan       */
-    --color7:  #fff; /*      white      */
+    --color1:  #c00; /*      red        */
+    --color2:  #0c0; /*      green      */
+    --color3:  #cc0; /*      yellow     */
+    --color4:  #00c; /*      blue       */
+    --color5:  #c0c; /*      purple     */
+    --color6:  #0cc; /*      cyan       */
+    --color7:  #ccc; /*      white      */
     --color8:  #000; /* bold black      */
     --color9:  #f00; /* bold red        */
     --color10: #0f0; /* bold green      */
