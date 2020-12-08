@@ -1,0 +1,20 @@
+:root {
+    --colorBg: #000; /*      background */
+    --colorFg: #fff; /*      foreground */
+    --color0:  #000; /*      black      */
+    --color1:  #f00; /*      red        */
+    --color2:  #0f0; /*      green      */
+    --color3:  #ff0; /*      yellow     */
+    --color4:  #00f; /*      blue       */
+    --color5:  #f0f; /*      purple     */
+    --color6:  #0ff; /*      cyan       */
+    --color7:  #fff; /*      white      */
+    --color8:  #000; /* bold black      */
+    --color9:  #f00; /* bold red        */
+    --color10: #0f0; /* bold green      */
+    --color11: #ff0; /* bold yellow     */
+    --color12: #00f; /* bold blue       */
+    --color13: #f0f; /* bold purple     */
+    --color14: #0ff; /* bold cyan       */
+    --color15: #fff; /* bold white      */
+}
