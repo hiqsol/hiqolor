@@ -7,6 +7,8 @@
 ../bin/sc left.colortable   left.css
 ../bin/sc normal.colortable normal.colorscheme
 ../bin/sc normal.colortable normal.css
+../bin/sc old.colortable    old.colorscheme
+../bin/sc old.colortable    old.css
 ../bin/sc one.colortable    one.colorscheme
 ../bin/sc one.colortable    one.css
 ../bin/sc right.colortable  right.colorscheme
