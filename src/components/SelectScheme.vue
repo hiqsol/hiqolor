@@ -12,12 +12,13 @@ export default {
             cssId: "current-scheme",
             current: "",
             schemes: {
-                one:    'One',
-                two:    'Two',
-                left:   'Left',
-                right:  'Right',
-                bright: 'Bright',
-                normal: 'Normal',
+                one:    'HiQolor One',
+                old:    'HiQolor Old',
+                two:    'HiQolor Two',
+                left:   'HiQolor Left',
+                right:  'HiQolor Right',
+                bright: 'HiQolor Bright',
+                normal: 'HiQolor Normal',
             }
         }
     },

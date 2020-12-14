@@ -55,4 +55,8 @@ export default {
 <style>
 /*vue*/
 
+pre {
+    font-size:100%;
+}
+
 </style>
