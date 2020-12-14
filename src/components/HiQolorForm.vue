@@ -1,14 +1,14 @@
 <template>
     <div>
-    <table border=1>
+    <table>
         <tr>
-            <th>Color</th>
-            <th>Hue</th>
-            <th>Saturation</th>
-            <th>Value</th>
+            <th class="text-right">Color</th>
+            <th class="text-center">Hue</th>
+            <th class="text-center">Saturation</th>
+            <th class="text-center">Value</th>
         </tr>
         <tr v-for="(name, key) in colors">
-            <th align=right>{{ name }}</th>
+            <th class="text-right">{{ name }}</th>
             <td>
                 <input type=number min=0>/<input type=number min=0></td>
             </td>
@@ -52,17 +52,16 @@ export default {
 </script>
 
 <style>
-/*vue*/
 
 input {
-    width:40px;
+    width: 50px;
+    background-color: var(--colorBg);
+    color: var(--colorFg);
+    border:1px solid var(--colorFg);
 }
 
-table {
-    border:1px solid white;
-}
-th {
-    padding:3px 5px;
+td, th {
+    padding: 1px 7px;
 }
 
 </style>

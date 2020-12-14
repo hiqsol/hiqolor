@@ -1,8 +1,14 @@
 <template>
-  <div id="hiqolor">
-      <hi-qolor-text></hi-qolor-text>
-      <hi-qolor-form></hi-qolor-form>
-      <select-scheme></select-scheme>
+  <div id="hiqolor" class="container">
+    <div class="row">
+      <div class="col-sm">
+        <hi-qolor-text></hi-qolor-text>
+      </div>
+      <div class="col-sm">
+        <select-scheme></select-scheme>
+        <hi-qolor-form></hi-qolor-form>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,7 +26,7 @@ export default {
 </script>
 
 <style>
-:root {
+body {
     font-family:Hack;
     font-size:14px;
     color: var(--colorFg);

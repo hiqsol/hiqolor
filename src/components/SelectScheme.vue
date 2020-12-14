@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style>
-/*vue*/
+select {
+    background-color: var(--colorBg);
+    color: var(--colorFg);
+}
 
 </style>
