@@ -1,78 +1,34 @@
 <!doctype html>
-<html style="background-color:black">
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="schemes/one.css" />
-    <link rel="stylesheet" href="main.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"
+/>
+    <title>hiqolor</title>
   </head>
   <body>
-    <p>
-        <span class=foreground>normal</span>
-        <span class=black>black</span>
-        <span class=red>red</span>
-        <span class=green>green</span>
-        <span class=yellow>yellow</span>
-        <span class=blue>blue</span>
-        <span class=purple>purple</span>
-        <span class=cyan>cyan</span>
-        <span class=white>white</span>
-    </p>
-    <p class=bold>
-        <span class=foreground>bold</span>
-        <span class=black>black</span>
-        <span class=red>red</span>
-        <span class=green>green</span>
-        <span class=yellow>yellow</span>
-        <span class=blue>blue</span>
-        <span class=purple>purple</span>
-        <span class=cyan>cyan</span>
-        <span class=white>white</span>
-    </p>
-    <pre>
-        <span class=black>This is <b>black</b> line</span>
-        <span class=red>This is <b>red</b> line</span>
-        <span class=green>This is <b>green</b> line</span>
-        <span class=yellow>This is <b>yellow</b> line</span>
-        <span class=blue>This is <b>blue</b> line</span>
-        <span class=purple>This is <b>purple</b> line</span>
-        <span class=cyan>This is <b>cyan</b> line</span>
-        <span class=white>This is <b>white</b> line</span>
-    </pre>
-    <pre>
-&lt;?php
-declare(strict_types=1);
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <a
+      class="github-fork-ribbon right-top"
+      href="https://github.com/hiqsol/hiqolor"
+      title="Fork me on GitHub">
+        Fork me on GitHub
+    </a>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-<span class=cyan>namespace</span> hiqolor;
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-class Scheme
-{
-    public string $name;
-
-    private array $colors = [
-        'foreground'    =&gt; null,
-    ];
-
-    public function has($key): bool
-    {
-        return !empty($this->colors[$key]);
-    }
-
-    public function setAll(array $colors): self
-    {
-        foreach ($colors as $no => $color) {
-            $this->set($no, $color);
-        }
-
-        return $this;
-    }
-
-    public function set($key, $color): self
-    {
-        $key = $this->normalizeKey($key);
-        $color = $this->normalizeColor($color);
-        $this->colors[$key] = $color;
-        return $this->setAliases($key, $color);
-    }
-}
-    </pre>
+      To begin the development, run `npm start` in this folder.
+      To create a production bundle, use `npm run build`.
+    -->
   </body>
 </html>
