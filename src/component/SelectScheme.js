@@ -46,7 +46,6 @@ export default class SelectScheme extends React.Component {
 
   render() {
     var schemes = this.state.schemes;
-    this.setScheme('one');
     return (
       <select onChange={this.handleChange} autoFocus>
         { Object.entries(schemes).map(([key, name], i) => <option key={i} value={key}>{name}</option>) }
