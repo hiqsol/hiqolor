@@ -1,4 +1,5 @@
 import React from "react";
+import HueInput from "./HueInput";
 
 export default class Form extends React.Component {
   state = {
@@ -33,7 +34,7 @@ export default class Form extends React.Component {
           <tr key={i}>
             <th className="text-right">{name}</th>
             <td>
-              <input type="number" min="0" />/<input type="number" min="0" />
+              <HueInput name={key} />/<HueInput name={key} bold="1" />
             </td>
             <td>
               <input type="number" min="0" />/<input type="number" min="0" />
