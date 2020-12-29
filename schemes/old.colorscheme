@@ -20,7 +20,7 @@ Color=80,80,80
 Color=46,52,54
 
 [Color0Intense]
-Color=111,111,111
+Color=100,100,100
 
 [Color1]
 Color=215,16,86
@@ -77,16 +77,16 @@ Color=6,152,154
 Color=134,235,227
 
 [Color7]
-Color=211,215,207
+Color=208,210,205
 
 [Color7Faint]
 Color=211,215,207
 
 [Color7Intense]
-Color=238,238,236
+Color=250,250,249
 
 [Foreground]
-Color=186,189,182
+Color=198,200,195
 RandomHueRange=360
 RandomSaturationRange=100
 
@@ -103,6 +103,6 @@ RandomSaturationRange=100
 [General]
 Blur=false
 ColorRandomization=false
-Description=HiQolor
+Description=HiQolor Old
 Opacity=1
 Wallpaper=
