@@ -1,37 +1,37 @@
 import React from "react";
+import {MobXProviderContext, observer} from "mobx-react";
 
-export default class SelectScheme extends React.Component {
-  state = {
-    cssId: "current-scheme",
-    current: "",
-    schemes: {
-      one:    'HiQolor One',
-      old:    'HiQolor Old',
-      two:    'HiQolor Two',
-      left:   'HiQolor Left',
-      right:  'HiQolor Right',
-      bright: 'HiQolor Bright',
-      normal: 'HiQolor Normal',
-    }
+const SelectScheme = observer(() => {
+  const {scheme} = React.useContext(MobXProviderContext);
+  const cssId = "current-scheme";
+  const schemes = {
+    one:    'HiQolor One',
+    old:    'HiQolor Old',
+    two:    'HiQolor Two',
+    left:   'HiQolor Left',
+    right:  'HiQolor Right',
+    bright: 'HiQolor Bright',
+    normal: 'HiQolor Normal',
+  }
+
+  const handleChange = event => {
+    setScheme(event.target.value);
+    scheme.loadFromCss();
   };
 
-  handleChange = (event) => {
-    this.setScheme(event.target.value);
-  };
-
-  setScheme(name) {
-    var link = document.getElementById(this.cssId);
+  const setScheme = name => {
+    var link = document.getElementById(cssId);
     if (!link) {
       var head  = document.getElementsByTagName('head')[0];
-      link = this.createCssLink();
+      link = createCssLink();
       head.appendChild(link);
     }
-    link.href = this.getCssPath(name);
+    link.href = getCssPath(name);
   };
 
-  createCssLink() {
+  const createCssLink = () => {
     var link    = document.createElement('link');
-    link.id     = this.cssId;
+    link.id     = cssId;
     link.rel    = 'stylesheet';
     link.type   = 'text/css';
     link.href   = '';
@@ -40,16 +40,15 @@ export default class SelectScheme extends React.Component {
     return link;
   };
 
-  getCssPath(name) {
+  const getCssPath = (name) => {
     return '/schemes/' + name + '.css';
   };
 
-  render() {
-    var schemes = this.state.schemes;
-    return (
-      <select onChange={this.handleChange} autoFocus>
-        { Object.entries(schemes).map(([key, name], i) => <option key={i} value={key}>{name}</option>) }
-      </select>
-    );
-  }
-}
+  return (
+    <select onChange={handleChange} autoFocus>
+      { Object.entries(schemes).map(([key, name], i) => <option key={i} value={key}>{name}</option>) }
+    </select>
+  );
+})
+
+export default SelectScheme;

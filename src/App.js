@@ -1,28 +1,31 @@
 import React from "react";
-//import Form from "./Form";
-import Text from "./Text";
-import Form from "./Form";
-import SelectScheme from "./SelectScheme";
+import {Provider} from "mobx-react";
 import "./App.css";
 
-export default class App extends React.Component {
-  state = {
-    name: 'one',
-  };
+import Text from "./component/Text";
+import Form from "./component/Form";
+import SelectScheme from "./component/SelectScheme";
+import ColorScheme from "./store/ColorScheme";
+import ColorStore from "./store/ColorStore";
 
-  render() {
-    return (
-      <div id="hiqolor" className="container">
-        <div className="row">
-          <div className="col-sm">
-            <Text />
-          </div>
-          <div className="col-sm">
-            <SelectScheme />
-            <Form />
-          </div>
+const stores = {
+  scheme: new ColorScheme(),
+};
+
+const App = () => (
+  <Provider {...stores}>
+    <div id="hiqolor" className="container">
+      <div className="row">
+        <div className="col-sm">
+          <Text />
+        </div>
+        <div className="col-sm">
+          <SelectScheme />
+          <Form />
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  </Provider>
+);
+
+export default App;
