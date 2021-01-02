@@ -1,6 +1,5 @@
 import React from "react";
 import {Provider} from "mobx-react";
-import "./App.css";
 
 import Text from "./component/Text";
 import Form from "./component/Form";
