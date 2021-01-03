@@ -28,3 +28,11 @@ INPUT {
 TD, TH {
     padding: 1px 7px;
 }
+
+#syntax-demo TD {
+    padding: 0px;
+}
+
+#syntax-demo .next-item TD {
+    padding-top: 7px;
+}
