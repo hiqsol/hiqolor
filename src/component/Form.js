@@ -5,8 +5,6 @@ import HueInput from "./HueInput";
 const Form = observer(() => {
   const {scheme} = React.useContext(MobXProviderContext);
 
-  console.log('render Form');
-
   return (
     <div>
     <table>

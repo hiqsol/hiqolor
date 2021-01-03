@@ -5,8 +5,8 @@ const SelectScheme = observer(() => {
   const {scheme} = React.useContext(MobXProviderContext);
   const cssId = "current-scheme";
   const schemes = {
-    one:    'HiQolor One',
     old:    'HiQolor Old',
+    one:    'HiQolor One',
     two:    'HiQolor Two',
     left:   'HiQolor Left',
     right:  'HiQolor Right',

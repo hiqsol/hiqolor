@@ -1,0 +1,38 @@
+/* Name: HiQolor One */
+
+.Comment            { color: var(--darkgray); }
+    .phpDocTags     { color: var(--darkcyan); }
+    .phpDocParam    { color: var(--darkgreen); }
+.Constant           { color: var(--brown); }
+    .String         { color: var(--yellow); }
+    .Character      { color: var(--yellow); }
+    .Number         { color: var(--magenta); }
+    .Boolean        { color: var(--magenta); }
+    .Float          { color: var(--magenta); }
+.Identifier         { color: var(--white); }
+    .Function       { color: var(--cyan); }
+.Statement          { color: var(--darkcyan); }
+    .Conditional    { color: var(--cyan); }
+    .Repeat         { color: var(--darkcyan); }
+    .Label          { color: var(--darkcyan); }
+    .Operator       { color: var(--darkcyan); }
+    .Keyword        { color: var(--darkcyan); }
+    .Exception      { color: var(--cyan); }
+.PreProc            { color: var(--darkblue); }
+    .Include        { color: var(--blue); }
+    .Define         { color: var(--blue); }
+    .Macro          { color: var(--blue); }
+    .PreCondit      { color: var(--blue); }
+.Type               { color: var(--green); }
+    .StorageClass   { color: var(--darkgreen); }
+    .Structure      { color: var(--darkgreen); }
+    .Typedef        { color: var(--darkgreen); }
+.Special            { color: var(--red); }
+    .SpecialChar    { color: var(--red); }
+    .Tag            { color: var(--red); }
+    .Delimiter      { color: var(--darkred); }
+    .SpecialComment { color: var(--red); }
+    .Debug          { color: var(--red); }
+.Ignore             { color: var(--darkgray); }
+.Error              { background-color: var(--red); }
+.Todo               { color: var(--white); background-color: var(--darkred); }

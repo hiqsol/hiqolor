@@ -1,3 +1,22 @@
+:root {
+    --black:        var(--color0);
+    --darkred:      var(--color1);
+    --darkgreen:    var(--color2);
+    --brown:        var(--color3);
+    --darkblue:     var(--color4);
+    --darkmagenta:  var(--color5);
+    --darkcyan:     var(--color6);
+    --gray:         var(--color7);
+    --darkgray:     var(--color8);
+    --red:          var(--color9);
+    --green:        var(--color10);
+    --yellow:       var(--color11);
+    --blue:         var(--color12);
+    --magenta:      var(--color13);
+    --cyan:         var(--color14);
+    --white:        var(--color15);
+}
+
 .colorFg        { color: var(--colorFg); }
 .colorBg        { color: var(--colorBg); }
 .color0         { color: var(--color0); }
