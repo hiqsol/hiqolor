@@ -1,0 +1,18 @@
+<style>
+  B { font-weight:normal; }
+</style>
+<pre class="colorFg">
+<b class="Keyword">import</b> React from <b class="String">"react"</b>;
+<b class="Keyword">import</b> <b class="Keyword">{</b>MobXProviderContext, observer<b class="Keyword">}</b> from <b class="String">"mobx-react"</b>;
+<b class="Keyword">import</b> HueInput from <b class="String">"./HueInput"</b>;
+
+<b class="Keyword">const</b> SyntaxDemo = observer(() =&gt; <b class="Function">{</b>
+  <b class="Keyword">const</b> <b class="Function">{</b>scheme<b class="Function">}</b> = React.useContext(MobXProviderContext);
+
+  <b class="Keyword">const</b> samples = <b class="Function">{</b>
+    demo:   <b class="String">'Demo'</b>,
+    php:    <b class="String">'PHP'</b>,
+    js:     <b class="String">'JavaScript'</b>,
+  <b class="Function">}</b>
+<b class="Function">}</b>
+</pre>

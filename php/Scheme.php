@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace hiqolor;
 
+/**
+ * @author Andrii Vasyliev <sol@hiqdev.com>
+ */
 class Scheme
 {
     public string $name;

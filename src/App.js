@@ -21,6 +21,7 @@ const App = () => (
         </div>
         <div className="col-sm">
           <SelectScheme />
+          <br/><br/>
           <Form />
         </div>
       </div>

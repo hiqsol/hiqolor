@@ -33,6 +33,6 @@
     .Delimiter      { color: var(--darkred); }
     .SpecialComment { color: var(--red); }
     .Debug          { color: var(--red); }
-.Ignore             { color: var(--darkgray); }
+.Ignore             { color: var(--black); }
 .Error              { background-color: var(--red); }
 .Todo               { color: var(--white); background-color: var(--darkred); }

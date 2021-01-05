@@ -45,9 +45,11 @@ const SelectScheme = observer(() => {
   };
 
   return (
-    <select onChange={handleChange} autoFocus>
-      { Object.entries(schemes).map(([key, name], i) => <option key={i} value={key}>{name}</option>) }
-    </select>
+    <div>
+      <label for="select-scheme">Scheme:</label> <select onChange={handleChange} autoFocus id="select-scheme">
+        { Object.entries(schemes).map(([key, name], i) => <option key={i} value={key}>{name}</option>) }
+      </select>
+    </div>
   );
 })
 

@@ -1,0 +1,26 @@
+<style>
+  B { font-weight:normal; }
+</style>
+<pre class="colorFg">
+<b class="Delimiter">&lt;php</b>
+<b class="Function">declare</b><b class="Special">(</b>strict_types<b class="Operator">=</b><b class="Number">1</b><b class="Special">)</b>;
+
+<b class="PreProc">namespace</b> hiqolor;
+
+<b class="Comment">/**</b>
+ <b class="Comment">*</b> <b class="phpDocTags">@author</b> <b class="phpDocParam">Andrii Vasyliev</b> <b class="Comment">&lt;sol@hiqdev.com&gt;</b>
+ <b class="Comment">*/</b>
+<b class="Keyword">class</b> Scheme
+<b class="Special">{</b>
+    <b class="Type">public string</b> <b class="Operator">$</b><b class="Identifier">values</b> <b class="Operator">=</b> <b class="Special">[</b>
+      <b class="String">'null'</b> <b class="Operator">=></b> <b class="Type">null</b>,
+      <b class="String">'zero'</b> <b class="Operator">=></b> <b class="Number">0</b>,
+      <b class="String">'pi'</b> <b class="Operator">=></b> <b class="Float">3.1415</b>,
+    <b class="Special">]</b>;
+
+    <b class="Type">public</b> <b class="Keyword">function</b> has<b class="Special">(</b><b class="Type">string</b> <b class="Operator">$</b><b class="Identifier">key</b><b class="Special">)</b><b class="Operator">:</b> <b class="Type">bool</b>
+    <b class="Special">{</b>
+        <b class="Keyword">return</b> <b class="Operator">!</b><b class="Keyword">empty</b><b class="Special">(</b><b class="Operator">$</b><b class="Identifier">this</b><b class="Operator">-></b>values<b class="Special">[</b><b class="Operator">$</b><b class="Identifier">key</b><b class="Special">])</b>;
+    <b class="Special">}</b>
+<b class="Special">}</b>
+</pre>

@@ -3,14 +3,20 @@ body {
     font-size:14px;
     color: var(--colorFg);
     background-color: var(--colorBg);
+    padding-top:10px;
 }
 
 B {
     font-weight: normal;
 }
 
+LABEL {
+    font-weight: bold;
+}
+
 PRE {
-  white-space: pre;
+    font-size: 100%;
+    line-height: 1.22;
 }
 
 SELECT {
