@@ -1,14 +1,13 @@
 import React from "react";
 import chroma from "chroma-js";
 
-const HueInput = ({name, bold, scheme, colors}) => {
+const HueInput = ({name, bold, scheme}) => {
   const onChange = e => {
     scheme.setHue(name, bold, e.target.value);
   }
 
   const getHue = () => {
-    var color = colors[scheme.name2number(name, bold)];
-    console.log('get', colors)
+    var color = scheme.colors[scheme.name2number(name, bold)];
     var hue = chroma(color).hsl()[0];
     if (isNaN(hue)) {
       return '';

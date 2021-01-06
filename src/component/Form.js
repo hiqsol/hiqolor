@@ -21,7 +21,7 @@ const Form = observer(() => {
         <tr key={i}>
           <th className="text-right">{label}</th>
           <td>
-            <HueInput name={name} bold="0" scheme={scheme} colors={scheme.allColors}/>/<HueInput name={name} bold="1" scheme={scheme} colors={scheme.allColors}/>
+            <HueInput name={name} bold="0" scheme={scheme} />/<HueInput name={name} bold="1" scheme={scheme} />
           </td>
           <td>
             <input type="number" min="0" />/<input type="number" min="0" />
