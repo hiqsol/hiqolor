@@ -5,4 +5,11 @@
 /dist
 
 /schemes/*.css
-/schemes/*.colorscheme
+/schemes/left.colorscheme
+/schemes/right.colorscheme
+/schemes/normal.colorscheme
+/schemes/bright.colorscheme
+/schemes/old.colorscheme
+/schemes/one.colorscheme
+/schemes/two.colorscheme
+/schemes/ubuntu-breeze.colortable

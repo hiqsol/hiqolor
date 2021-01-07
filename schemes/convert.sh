@@ -1,8 +1,5 @@
 #!/bin/sh
 
-../bin/sc bright.Xresource  bright.colorscheme
-../bin/sc bright.Xresource  bright.colortable
-../bin/sc bright.Xresource  bright.css
 ../bin/sc left.colortable   left.colorscheme
 ../bin/sc left.colortable   left.css
 ../bin/sc normal.colortable normal.colorscheme
@@ -15,3 +12,10 @@
 ../bin/sc right.colortable  right.css
 ../bin/sc two.colortable    two.colorscheme
 ../bin/sc two.colortable    two.css
+
+../bin/sc bright.Xresource  bright.colorscheme
+../bin/sc bright.Xresource  bright.colortable
+../bin/sc bright.Xresource  bright.css
+
+../bin/sc ubuntu-breeze.colorscheme    ubuntu-breeze.colortable
+../bin/sc ubuntu-breeze.colorscheme    ubuntu-breeze.css
