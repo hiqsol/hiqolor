@@ -15,8 +15,8 @@ class ColorScheme {
 
   names = {
     ground:   'Ground',
-    white:    'White',
     black:    'Black',
+    white:    'White',
     yellow:   'Yellow',
     green:    'Green',
     cyan:     'Cyan',
@@ -24,7 +24,6 @@ class ColorScheme {
     purple:   'Purple',
     red:      'Red',
   }
-
 
   colors = {};
 
