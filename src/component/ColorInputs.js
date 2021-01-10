@@ -1,23 +1,33 @@
 import React from "react";
-import chroma from "chroma-js";
 
-const HueInput = ({name, bold, scheme}) => {
+const NumberInput = ({component, name, bold, scheme, type='number', max=100}) => {
   const onChange = e => {
-    scheme.setHue(name, bold, e.target.value);
+    scheme.setComponent(component, name, bold, e.target.value);
   }
 
-  const getHue = () => {
-    var color = scheme.colors[scheme.name2number(name, bold)];
-    var hue = chroma(color).hsl()[0];
-    if (isNaN(hue)) {
-      return '';
-    }
-    return Math.round(hue);
+  const value = () => {
+    return scheme.getComponent(component, name, bold);
   }
 
   return (
-    <input type="number" min="0" max="359" name={name} value={getHue()} onChange={onChange} />
+    <input type={type} min="0" max={max} name={name} value={value()} onChange={onChange} />
   )
 }
 
-export default HueInput;
+const HueInput = ({name, bold, scheme}) => (
+  <NumberInput component="hue" name={name} bold={bold} scheme={scheme} max="359" />
+)
+
+const SaturationInput = ({name, bold, scheme}) => (
+  <NumberInput component="saturation" name={name} bold={bold} scheme={scheme} />
+)
+
+const ValueInput = ({name, bold, scheme}) => (
+  <NumberInput component="value" name={name} bold={bold} scheme={scheme}/>
+)
+
+const HexInput = ({name, bold, scheme}) => (
+  <NumberInput component="hex" name={name} bold={bold} scheme={scheme} type="hex"/>
+)
+
+export {HueInput, SaturationInput, ValueInput, HexInput};

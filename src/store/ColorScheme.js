@@ -45,20 +45,29 @@ class ColorScheme {
   }
 
   get hue() {
-    return this.getHue('custom', 1);
+    return this.getComponent('hue', 'custom', 1);
   }
 
   get allColors() {
     return this.colors;
   }
 
-  getHue(name, bold) {
+  getComponent(component, name, bold) {
     var color = this.colors[this.name2number(name, bold)];
-    var hue = chroma(color).hsl()[0];
-    if (isNaN(hue)) {
+    if (component==='hex') return chroma(color).hex();
+    var num = this.component2number(component);
+    var value = chroma(color).hsl()[num];
+    if (isNaN(value)) {
       return '';
     }
-    return Math.round(hue);
+    if (num>0) value = value * 100;
+    return Math.round(value);
+  }
+
+  component2number(component) {
+    if (component==='saturation') return 1;
+    if (component==='value') return 2;
+    return 0;
   }
 
   setHue(name, bold, value) {
