@@ -1,6 +1,6 @@
 import React from "react";
 import {MobXProviderContext, observer} from "mobx-react";
-import {HueInput, SaturationInput, ValueInput, HexInput} from "./ColorInputs";
+import {ColorInput, HueInput, SaturationInput, ValueInput, HexInput} from "./ColorInputs";
 
 const Form = observer(() => {
   const {scheme} = React.useContext(MobXProviderContext);
@@ -23,8 +23,7 @@ const Form = observer(() => {
         <tr key={i}>
           <th className="text-right">{label}</th>
           <td>
-            <input type="color" name={name} bold="0" value={scheme.getComponent('hex', name, 0)} />/
-            <input type="color" name={name} bold="1" value={scheme.getComponent('hex', name, 1)} />
+            <ColorInput name={name} bold="0" scheme={scheme} />/<ColorInput name={name} bold="1" scheme={scheme} />
           </td>
           <td>
             <HueInput name={name} bold="0" scheme={scheme} />/<HueInput name={name} bold="1" scheme={scheme} />

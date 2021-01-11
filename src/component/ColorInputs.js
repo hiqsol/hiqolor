@@ -30,4 +30,8 @@ const HexInput = ({name, bold, scheme}) => (
   <NumberInput component="hex" name={name} bold={bold} scheme={scheme} type="hex"/>
 )
 
-export {HueInput, SaturationInput, ValueInput, HexInput};
+const ColorInput = ({name, bold, scheme}) => (
+  <NumberInput component="hex" name={name} bold={bold} scheme={scheme} type="color"/>
+)
+
+export {ColorInput, HueInput, SaturationInput, ValueInput, HexInput};
