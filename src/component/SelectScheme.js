@@ -12,6 +12,7 @@ const SelectScheme = observer(() => {
     right:  'HiQolor Right',
     bright: 'HiQolor Bright',
     normal: 'HiQolor Normal',
+    'ubuntu-breeze': 'Ubuntu Breeze',
   }
 
   const handleChange = event => {

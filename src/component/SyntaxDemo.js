@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import {MobXProviderContext, observer} from "mobx-react";
-import HueInput from "./HueInput";
 
 const SyntaxDemo = observer(() => {
   const {scheme} = React.useContext(MobXProviderContext);
