@@ -1,0 +1,23 @@
+/* Name: bright */
+
+:root {
+    --colorBg: #000000; /*      background */
+    --colorFg: #cccccc; /*      foreground */
+    --color0:  #333333; /*      black      */
+    --color1:  #cc0000; /*      red        */
+    --color2:  #00ff00; /*      green      */
+    --color3:  #ffff00; /*      yellow     */
+    --color4:  #0000ff; /*      blue       */
+    --color5:  #ff00ff; /*      purple     */
+    --color6:  #00ffff; /*      cyan       */
+    --color7:  #ffffff; /*      white      */
+    --color8:  #666666; /* bold black      */
+    --color9:  #ff0000; /* bold red        */
+    --color10: #00cc00; /* bold green      */
+    --color11: #cccc00; /* bold yellow     */
+    --color12: #0000cc; /* bold blue       */
+    --color13: #cc00cc; /* bold purple     */
+    --color14: #00cccc; /* bold cyan       */
+    --color15: #cccccc; /* bold white      */
+}
+

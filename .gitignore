@@ -4,7 +4,6 @@
 /vendor
 /dist
 
-/schemes/*.css
 /schemes/left.colorscheme
 /schemes/right.colorscheme
 /schemes/normal.colorscheme

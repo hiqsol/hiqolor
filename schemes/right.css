@@ -1,0 +1,23 @@
+/* Name: HiQolor Right */
+
+:root {
+    --colorBg: #000000; /*      background */
+    --colorFg: #b6afaf; /*      foreground */
+    --color0:  #333333; /*      black      */
+    --color1:  #d51073; /*      red        */
+    --color2:  #579617; /*      green      */
+    --color3:  #d66b00; /*      yellow     */
+    --color4:  #1863af; /*      blue       */
+    --color5:  #661cb0; /*      purple     */
+    --color6:  #00bd5e; /*      cyan       */
+    --color7:  #ccd1c7; /*      white      */
+    --color8:  #666666; /* bold black      */
+    --color9:  #ff5252; /* bold red        */
+    --color10: #42d742; /* bold green      */
+    --color11: #e1e147; /* bold yellow     */
+    --color12: #4040ce; /* bold blue       */
+    --color13: #e274e2; /* bold purple     */
+    --color14: #84ebeb; /* bold cyan       */
+    --color15: #e7e7e4; /* bold white      */
+}
+

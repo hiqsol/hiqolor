@@ -1,0 +1,23 @@
+/* Name: HiQolor One */
+
+:root {
+    --colorBg: #000000; /*      background */
+    --colorFg: #b3b3b3; /*      foreground */
+    --color0:  #808080; /*      black      */
+    --color1:  #dd9688; /*      red        */
+    --color2:  #88dd88; /*      green      */
+    --color3:  #ddb388; /*      yellow     */
+    --color4:  #8888dd; /*      blue       */
+    --color5:  #dd88dd; /*      purple     */
+    --color6:  #88d6dd; /*      cyan       */
+    --color7:  #cccccc; /*      white      */
+    --color8:  #4d4d4d; /* bold black      */
+    --color9:  #df2040; /* bold red        */
+    --color10: #60df20; /* bold green      */
+    --color11: #dfdf20; /* bold yellow     */
+    --color12: #2080df; /* bold blue       */
+    --color13: #8020df; /* bold purple     */
+    --color14: #20dfcf; /* bold cyan       */
+    --color15: #e6e6e6; /* bold white      */
+}
+

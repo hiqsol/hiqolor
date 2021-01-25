@@ -1,0 +1,23 @@
+/* Name: Ubuntu Breeze */
+
+:root {
+    --colorBg: #300a24; /*      background */
+    --colorFg: #eeeeee; /*      foreground */
+    --color0:  #383a42; /*      black      */
+    --color1:  #e4564a; /*      red        */
+    --color2:  #50a050; /*      green      */
+    --color3:  #c4a000; /*      yellow     */
+    --color4:  #5283c2; /*      blue       */
+    --color5:  #7550a4; /*      purple     */
+    --color6:  #0a96b4; /*      cyan       */
+    --color7:  #fafafa; /*      white      */
+    --color8:  #1c1a24; /* bold black      */
+    --color9:  #f83636; /* bold red        */
+    --color10: #50c850; /* bold green      */
+    --color11: #de6602; /* bold yellow     */
+    --color12: #005ce8; /* bold blue       */
+    --color13: #ba0eb8; /* bold purple     */
+    --color14: #00aac8; /* bold cyan       */
+    --color15: #ffffff; /* bold white      */
+}
+

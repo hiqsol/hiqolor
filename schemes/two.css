@@ -1,0 +1,23 @@
+/* Name: HiQolor Two */
+
+:root {
+    --colorBg: #000000; /*      background */
+    --colorFg: #b3b3b3; /*      foreground */
+    --color0:  #666666; /*      black      */
+    --color1:  #e08594; /*      red        */
+    --color2:  #a3e085; /*      green      */
+    --color3:  #e0b385; /*      yellow     */
+    --color4:  #85b3e0; /*      blue       */
+    --color5:  #b385e0; /*      purple     */
+    --color6:  #85e0d9; /*      cyan       */
+    --color7:  #e6e6e6; /*      white      */
+    --color8:  #333333; /* bold black      */
+    --color9:  #b3331a; /* bold red        */
+    --color10: #1ab31a; /* bold green      */
+    --color11: #b3b31a; /* bold yellow     */
+    --color12: #1a1ab3; /* bold blue       */
+    --color13: #b31ab3; /* bold purple     */
+    --color14: #1aa6b3; /* bold cyan       */
+    --color15: #cccccc; /* bold white      */
+}
+
