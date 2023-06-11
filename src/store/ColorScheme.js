@@ -84,10 +84,11 @@ class ColorScheme {
   }
 
   name2number(name, bold) {
+    var nonBold = bold === "0" || bold === 0;
     if (name in this.numbers) {
-      return (this.numbers[name] + (bold=="0" ? 0 : 8)).toString();
+      return (this.numbers[name] + (nonBold ? 0 : 8)).toString();
     }
-    return bold=="0" ? 'Fg' : 'Bg';
+    return nonBold ? 'Fg' : 'Bg';
   }
 }
 
