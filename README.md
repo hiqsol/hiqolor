@@ -9,6 +9,23 @@ To achieve better readability in shell:
 - make saturation and brightness of bold color higher
   then normal
 
+## Usage
+
+JS part:
+
+```js
+npm install
+npm run start
+# open http://localhost:3000
+```
+
+PHP part:
+
+```php
+composer install
+./bin/sc bright.colortable bright.css
+```
+
 ## Color table
 
                 Hue     Sat     Val
